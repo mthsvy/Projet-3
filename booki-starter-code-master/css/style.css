@@ -318,7 +318,6 @@ a {
 footer {
     display: flex;
     background-color: #F2F2F2;
-    width: 1340px;
     height: 163px;
     margin-top: 65px;
     justify-content: flex-start;
@@ -384,7 +383,21 @@ li {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    body {
-        flex-direction: column;
+
+    /*HEADER*/    
+    .main-container, body {
+        padding: 0%;
+        margin: 0%;
+    }
+    .filtre{
+        flex-wrap: wrap;
+    }
+
+    footer{
+        flex-wrap: wrap;
+    }
+
+    .hebergements-cards .card {
+        width: 335px;
     }
 }
