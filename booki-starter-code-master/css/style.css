@@ -208,12 +208,14 @@ a {
 
 /******Filtres******/
 
-.filtre {
+.filtres, .filtre {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
+
+
 
 .filtre div {
     display: flex;
@@ -384,18 +386,18 @@ li {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-    /*HEADER*/ 
-    .conteneurflex{
+    /*HEADER*/
+    .conteneurflex {
         flex-direction: column;
         align-items: center;
-    }   
-    
-    .conteneurflex nav{
+    }
+
+    .conteneurflex nav {
         flex-direction: row;
         width: 100%;
     }
 
-    .nav div{
+    .nav div {
         width: 60%;
         text-align: center;
     }
@@ -403,21 +405,52 @@ li {
     .nav div:hover {
         border-bottom: solid var(--main-color);
         border-top: none;
+        padding-bottom: 15px;
     }
-    
 
-    .filtre {
-        flex-wrap: wrap;
-    }
 
     footer {
         display: block;
-        height:fit-content;           
+        height: fit-content;
     }
 
-    .hebergements-cards .card {
+    .hebergements-cards .card,
+    .centeractivite {
         width: 335px;
+
+    }
+
+    .main-container {
+        padding: 0%;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+
+    }
+
+    .populaires-cards .card {
+        width: 100%;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+
+    body {
+        margin: 0%;
+    }
+
+    .filtres{
+        flex-direction: column;
+        align-items: stretch;
     }
 
     
+
+
+
+
+
 }
