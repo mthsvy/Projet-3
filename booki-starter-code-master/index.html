@@ -18,41 +18,42 @@
 
 <body>
     <div class="main-container">
-        <header class="conteneurflex">
+        <header class="conteneurflex"> <!--ENTÊTE, EN LIGNE EN MODE DESKTOP,EN COLONNE EN MODE MOBILE-->
             <div class="logobooki"><img src="images/logo/Booki.png" alt="logodebooki"></div>
             <nav class="conteneurflex nav">
                 <div><a href="#Hébergement">Hébergement</a></div>
                 <div><a href="#Activités">Activités</a></div>
             </nav>
         </header>
-        <main>
+        <main> <!--CORPS DE LA PAGE-->
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre-ville ou en pleine nature</p>
             <div class="barrederecherche">
-                <div class="location-dot"><i class="fa-solid fa-location-dot"></i></div>
-                <div class="largeurbarrederecherche"><input type="search" placeholder="Marseille,France"></div>
-                <div><button class="buttonrechercher">Rechercher</button>
+
+                <div class="largeurbarrederecherche">
+                    <div class="location-dot"><i class="fa-solid fa-location-dot"></i></div><input type="search"
+                        placeholder="Marseille,France">
+                    <button class="buttonloupe"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="buttonrechercher">Rechercher</button>
                 </div>
             </div>
             <div>
-                <h4>Filtres</h4>
+                <h4 class="filtretitre">Filtres</h4>
             </div>
             <div class="filtres">
-                <div class="filtre">
-                    <div><i class="fa-solid fa-money-bill-wave taille20"></i>
-                        <h4>Économique</h4>
-                    </div>
-                    <div><i class="fa-sharp fa-solid fa-person taille20"></i>
-                        <h4>Familial</h4>
-                    </div>
+                <div><i class="fa-solid fa-money-bill-wave taille20"></i>
+                    <h4>Économique</h4>
                 </div>
-                <div class="filtre">
-                    <div><i class="fa-solid fa-heart taille20"></i>
-                        <h4>Romantique</h4>
-                    </div>
-                    <div><i class="fa-sharp fa-solid fa-fire taille20"></i>
-                        <h4>Nos pépites</h4>
-                    </div>
+                <div><i class="fa-sharp fa-solid fa-person taille20"></i>
+                    <h4>Familial</h4>
+                </div>
+
+
+                <div><i class="fa-solid fa-heart taille20"></i>
+                    <h4>Romantique</h4>
+                </div>
+                <div><i class="fa-sharp fa-solid fa-fire taille20"></i>
+                    <h4>Nos pépites</h4>
                 </div>
             </div>
             <div>
@@ -202,7 +203,7 @@
                         <h3><a href="#">Afficher plus</a></h3>
                     </section>
 
-                    <section class="populaires">
+                    <section class="populaires" id="populaires">
                         <div class="populaires-title">
                             <h2 class="section-title">Les plus populaires</h2>
                             <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
