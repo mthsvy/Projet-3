@@ -3,6 +3,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
+/*** RACCOURCIE COULEUR ***/
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -13,12 +14,14 @@
     color: var(--main-color);
 }
 
+/***CENTRE LE CONTENU DU SITE ET ENLEVE LE MARGIN TOP PAR DÉFAULT DU BODY***/
 body {
     display: flex;
     justify-content: center;
     margin-top: 0px;
 }
 
+/***LE MAIN CONTAINER DEFINI LA LARGEUR DU CONTENU MAIN CONTAINER ET INDIQUE LA VALEUR MAXIMUM DE LA LARGEUR QUE LE CONTENU NE PEUT DEPASSER(FORMAT1440)***/
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -26,11 +29,13 @@ body {
     box-sizing: border-box;
 }
 
+/***TOUS LES ELEMENT SE TROUVANT DANS LA SECTION TITLE ONT UN MARGIN DE 0 ET UNE TAILLE DE POLICE DE 22PX***/
 .section-title {
     margin: 0;
     font-size: 22px;
 }
 
+/***CE SONT DES FOND BLANC AVEC DES BORDURES ARRONDIE ET UN OMBRAGE***/
 .card {
     background-color: white;
     border-radius: 20px;
@@ -38,10 +43,12 @@ body {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+/***PERMET AUX IMAGES DE CONSERVER LEURS PROPORTIONS TOUT EN REMPLISSANT LA TOTALITÉ DE LA ZONE DE CONTENU DE L'ÉLÉMENT***/
 .card img {
     object-fit: cover;
 }
 
+/***CELA DEFNIS LA TAILLE DE POLICE DES TITRES SE TROUVANT DANS LES CARTES***/
 .card-title {
     font-size: 16px;
 }
@@ -50,6 +57,7 @@ body {
     font-weight: 700;
 }
 
+/***COULEUR DES ETOILES***/
 .neutral-star {
     color: var(--main-bg-color)
 }
@@ -67,6 +75,7 @@ body {
     color: black;
 }
 
+/***CE SONT LES BLOCS A FOND GRIS DNAS LEQUEL SE TROUVE LES CARDS***/
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
@@ -74,12 +83,12 @@ body {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/****** Hebergements,LARGEUR ***********/
 .hebergements {
     width: 65%;
 }
 
-/****** Populaires ***********/
+/****** Populaires,LARGEUR ***********/
 .populaires {
     width: 32%;
 }
@@ -102,6 +111,7 @@ body {
     border-bottom-left-radius: 20px;
 }
 
+/***CELA EST LE CONTENU TEXTE QUI EST DANS LES CARD POPULAIRE MIS EN COLONNES AVEC UN SPACE BETWEEN POUR SEPARER LE TEXTE ET LES ETOILES ***/
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
@@ -129,12 +139,14 @@ header {
     height: 79px;
 }
 
+/***PERMET DE METTRE LE LOGO AVEC LE NAV EN LIGNE***/
 .conteneurflex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+/***TAILLE DU LOGO***/
 .logobooki img {
     width: 61.09px;
     height: 19px;
@@ -151,14 +163,17 @@ header {
     padding: 0px;
 }
 
+/***LE A:HOVER PERMET AU SURVOL DE LA SOURIS DE CHANGER LA COULEUR DU NAV "HEBERGEMENT ET ACTIVITE"***/
 .nav a:hover {
     color: var(--main-color);
 }
 
+/***LE ;NAV DIV:HOVER PERMET AU SURVOL DE LA SOURIS D'AJOUTER LES LIGNES BLEU AU DESSUS DU NAV "HEBERGEMENT ET ACTIVITE"***/
 .nav div:hover {
     border-top: solid var(--main-color);
 }
 
+/***CELA ENLEVE LES LIGNE QUI CE TROUVE EN DESSOUS DE TOUS LES LIENS***/
 a {
     text-decoration: none;
 }
@@ -186,15 +201,22 @@ a {
     justify-content: center;
 }
 
+/***CELA EST LA COULEUR DU LOGO DOT A GAUCHE DE LA BARRE DE RECHERCHE***/
 .location-dot i {
     color: black;
 }
 
+/***DEFINIS LA LARGEUR DE LA BARRE DE RECHERCHE OU CE TROUVE MARSEILLE,FRANCE***/
 .largeurbarrederecherche input {
     height: 40px;
     text-align: center;
     font-weight: bold;
     width: 245px;
+}
+
+/***CELA ENLEVE LA BORDURE DE LA BARRE DE RECHERCHE***/
+.barrederecherche input {
+    border: none;
 }
 
 .largeurbarrederecherche {
@@ -204,6 +226,12 @@ a {
     border-radius: 15px;
 }
 
+/***iCI ON MASQUE CETTE ELEMENT POUR S'EN SERVIR EN FORMAT MOBILE CAR SINON ON AURAI DEUX BOUTON RECHERCHER***/
+.buttonloupe {
+    display: none;
+}
+
+/***ICI ONT A UN BOUTON RECHERCHER AVEC UN FOND BLEU LE TEXTE CENTRER PAR RAPPORT AU FOND***/
 .buttonrechercher {
     height: 40px;
     text-align: center;
@@ -213,24 +241,13 @@ a {
     border: solid 1px var(--main-color);
 }
 
-.buttonloupe {
-    display: none;
-}
-
-.barrederecherche input {
-    border: none;
-}
-
-/******Filtres******/
-
+/******FILTRES, GAP EST L'ESPACEMENT QUI SE TROUVE ENTRE CHAQUES FILTRES******/
 .filtres {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
-
-
 
 .filtres div {
     display: flex;
@@ -252,7 +269,7 @@ a {
     font-size: 20px;
 }
 
-/*CONTENU HEBERGEMENT A MARSEILLE*/
+/***CONTENU HEBERGEMENT A MARSEILLE, LE FLEXWRAP PERMET QUE LE CONTENU NE DEPASSE PAS LE PARENT***/
 .hebergements-cards {
     display: flex;
     flex-direction: row;
@@ -352,10 +369,12 @@ footer div {
 
 }
 
+/***ICI CEST UNE LISTE NON ORDONNER***/
 ul {
     padding-left: 0px;
 }
 
+/***LE CONTENU DE LA LISTE***/
 li {
     list-style: none;
     padding-top: 15px;
@@ -363,8 +382,10 @@ li {
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
+/****** Media queries ************** FORMAT TABLETTE***/
 /* Medium devices (tablets, less/equal than 1024px) */
+
+/***ICI CELA PERMET DE DEFINIR LA TAILLE MAXIMALE DU FORMAT TABLETTE AVANT DE PASSER AU FORMAT DESKTOP***/
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
@@ -398,10 +419,20 @@ li {
     }
 }
 
-/* Small devices (phones, less than 768px) */
+/* Small devices (phones, less than 768px) FORMAT MOBILE */
+/***ICI CELA PERMET DE DEFINIR LA TAILLE MAXIMALE DU FORMAT MOBILE AVANT DE PASSER AU FORMAT TABLETTE***/
 @media only screen and (min-width: 375px) and (max-width: 767px) {
 
     /*HEADER*/
+    body {
+        margin: 0%;
+        margin-top: 30px;
+    }
+
+    .main-container {
+        padding: 0%;
+    }
+
     .conteneurflex {
         flex-direction: column;
         align-items: center;
@@ -428,8 +459,14 @@ li {
         width: 100%;
     }
 
-    .main-container {
-        padding: 0%;
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0%;
+        background-color: white;
     }
 
     .populaires-cards {
@@ -440,14 +477,8 @@ li {
         width: 100%;
     }
 
-    .hebergements-and-populaires {
-        flex-direction: column-reverse;
-        margin-bottom: 30px;
-    }
-
-    body {
-        margin: 0%;
-        margin-top: 30px;
+    #populaires {
+        background-color: var(--main-bg-color);
     }
 
     .filtres {
@@ -460,23 +491,6 @@ li {
 
     .filtres div {
         width: 35%;
-    }
-
-    .centeractivite {
-        padding: 0%;
-    }
-
-    .hebergements-and-populaires section {
-        border-radius: 0%;
-        background-color: white;
-    }
-
-    #populaires {
-        background-color: var(--main-bg-color);
-    }
-
-    .alignimgactivité img {
-        height: 124px;
     }
 
     h2,
@@ -492,6 +506,7 @@ li {
         margin: 30px;
     }
 
+    /***ICI C'EST LE BOUTON QUE JAI MASQUER QUI APPARAIT EN MOBILE SOUS LA FORME DUNE LOUPE***/
     .buttonloupe {
         height: 40px;
         width: 40px;
@@ -510,6 +525,14 @@ li {
 
     .buttonrechercher {
         display: none;
+    }
+
+    .alignimgactivité img {
+        height: 124px;
+    }
+
+    .centeractivite {
+        padding: 0%;
     }
 
     footer {
