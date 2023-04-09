@@ -14,7 +14,7 @@
     color: var(--main-color);
 }
 
-/***CENTRE LE CONTENU DU SITE ET ENLEVE LE MARGIN TOP PAR DÉFAULT DU BODY***/
+/***CENTRE LE CONTENU DU SITE ET ENLEVE LE MARGIN TOP PAR DEFAULT DU BODY***/
 body {
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@ body {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-/***PERMET AUX IMAGES DE CONSERVER LEURS PROPORTIONS TOUT EN REMPLISSANT LA TOTALITÉ DE LA ZONE DE CONTENU DE L'ÉLÉMENT***/
+/***PERMET AUX IMAGES DE CONSERVER LEURS PROPORTIONS TOUT EN REMPLISSANT LA TOTALITE DE LA ZONE DE CONTENU DE L'ELEMENT***/
 .card img {
     object-fit: cover;
 }
@@ -71,7 +71,7 @@ body {
 }
 
 .hebergements-and-populaires a,
-.alignimgactivité a {
+.alignimgactivite a {
     color: black;
 }
 
@@ -140,7 +140,7 @@ header {
 }
 
 /***PERMET DE METTRE LE LOGO AVEC LE NAV EN LIGNE***/
-.conteneurflex {
+.container-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -183,7 +183,7 @@ a {
 }
 
 /******Barre de Recherche******/
-.barrederecherche {
+.search-bar {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -207,7 +207,7 @@ a {
 }
 
 /***DEFINIS LA LARGEUR DE LA BARRE DE RECHERCHE OU CE TROUVE MARSEILLE,FRANCE***/
-.largeurbarrederecherche input {
+.search-bar-width input {
     height: 40px;
     text-align: center;
     font-weight: bold;
@@ -215,11 +215,11 @@ a {
 }
 
 /***CELA ENLEVE LA BORDURE DE LA BARRE DE RECHERCHE***/
-.barrederecherche input {
+.search-bar input {
     border: none;
 }
 
-.largeurbarrederecherche {
+.search-bar-width {
     border: 1px solid #F2F2F2;
     display: flex;
     flex-direction: row;
@@ -227,12 +227,12 @@ a {
 }
 
 /***iCI ON MASQUE CETTE ELEMENT POUR S'EN SERVIR EN FORMAT MOBILE CAR SINON ON AURAI DEUX BOUTON RECHERCHER***/
-.buttonloupe {
+.button-glass {
     display: none;
 }
 
 /***ICI ONT A UN BOUTON RECHERCHER AVEC UN FOND BLEU LE TEXTE CENTRER PAR RAPPORT AU FOND***/
-.buttonrechercher {
+.search-button {
     height: 40px;
     text-align: center;
     border-radius: 0px 15px 15px 0px;
@@ -242,14 +242,14 @@ a {
 }
 
 /******FILTRES, GAP EST L'ESPACEMENT QUI SE TROUVE ENTRE CHAQUES FILTRES******/
-.filtres {
+.filter {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-.filtres div {
+.filter div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -261,11 +261,11 @@ a {
     height: 40px;
 }
 
-.filtres div:hover {
+.filter div:hover {
     background-color: #DEEBFF;
 }
 
-.taille20 {
+.height20 {
     font-size: 20px;
 }
 
@@ -312,13 +312,13 @@ a {
 }
 
 /*SECTION ACTIVITE A MARSEILLE*/
-.paddingsectionactivité {
+.paddingsectionactivite {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
 }
 
-.alignimgactivité {
+.alignimgactivite {
     gap: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -331,14 +331,14 @@ a {
     background-color: #FFFFFF;
 }
 
-.alignimgactivité img {
+.alignimgactivite img {
     width: 295px;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.cardactivité {
+.cardactivite {
     padding-left: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -433,12 +433,12 @@ li {
         padding: 0%;
     }
 
-    .conteneurflex {
+    .container-flex {
         flex-direction: column;
         align-items: center;
     }
 
-    .conteneurflex nav {
+    .container-flex nav {
         flex-direction: row;
         width: 100%;
     }
@@ -481,7 +481,7 @@ li {
         background-color: var(--main-bg-color);
     }
 
-    .filtres {
+    .filter {
         JUSTIFY-CONTENT: center;
         flex-direction: row;
         align-items: stretch;
@@ -489,17 +489,17 @@ li {
         GAP: 10px;
     }
 
-    .filtres div {
+    .filter div {
         width: 35%;
     }
 
     h2,
     p,
-    .filtretitre {
+    .filter-title {
         margin-left: 30px;
     }
 
-    .barrederecherche {
+    .search-bar {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -507,7 +507,7 @@ li {
     }
 
     /***ICI C'EST LE BOUTON QUE JAI MASQUER QUI APPARAIT EN MOBILE SOUS LA FORME DUNE LOUPE***/
-    .buttonloupe {
+    .button-glass {
         height: 40px;
         width: 40px;
         background: var(--main-color);
@@ -519,15 +519,15 @@ li {
         display: block;
     }
 
-    .buttonloupe i {
+    .button-glass i {
         color: white;
     }
 
-    .buttonrechercher {
+    .search-button {
         display: none;
     }
 
-    .alignimgactivité img {
+    .alignimgactivite img {
         height: 124px;
     }
 
