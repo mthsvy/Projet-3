@@ -19,3 +19,5 @@ Explorer les activités proposées, y compris leur description et leur prix
 Réserver une activité pour les dates souhaitées
 Prérequis
 Afin de pouvoir utiliser correctement le site Web de l'agence de voyage, les utilisateurs doivent avoir accès à un navigateur Web moderne et compatible avec les standards HTML et CSS.
+
+Voici le liens du site http://127.0.0.1:5500/projet-3-openclassrooms/Projet-3/booki-starter-code-master/index.html
