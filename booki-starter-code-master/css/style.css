@@ -65,9 +65,8 @@ body {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
-    justify-content: space-between;
     margin-top: 30px;
-    margin-bottom: 60px;
+    gap: 40px;
 }
 
 .hebergements-and-populaires a,
@@ -159,13 +158,18 @@ header {
 
 /*****NAV*****/
 .nav {
-    width: 30%;
+    width: 18%;
     padding: 0px;
 }
 
 /***LE A:HOVER PERMET AU SURVOL DE LA SOURIS DE CHANGER LA COULEUR DU NAV "HEBERGEMENT ET ACTIVITE"***/
 .nav a:hover {
     color: var(--main-color);
+}
+
+.nav div {
+    border-top: solid white;
+
 }
 
 /***LE ;NAV DIV:HOVER PERMET AU SURVOL DE LA SOURIS D'AJOUTER LES LIGNES BLEU AU DESSUS DU NAV "HEBERGEMENT ET ACTIVITE"***/
@@ -239,6 +243,7 @@ a {
     background-color: var(--main-color);
     color: white;
     border: solid 1px var(--main-color);
+    cursor: pointer;
 }
 
 /******FILTRES, GAP EST L'ESPACEMENT QUI SE TROUVE ENTRE CHAQUES FILTRES******/
@@ -247,6 +252,8 @@ a {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
 }
 
 .filter div {
@@ -265,6 +272,12 @@ a {
     background-color: #DEEBFF;
 }
 
+
+
+.filter span {
+    font-weight: bold;
+}
+
 .height20 {
     font-size: 20px;
 }
@@ -273,15 +286,14 @@ a {
 .hebergements-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-top: 33px;
-    gap: 30px;
     flex-wrap: wrap;
+    gap: 25px;
 }
 
 .hebergements-cards .card {
-    width: 230px;
-    height: 207px;
+    width: 240px;
+    height: 200px;
 }
 
 .hebergements-cards img {
@@ -321,7 +333,6 @@ a {
 .alignimgactivite {
     gap: 30px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -386,9 +397,18 @@ li {
 /* Medium devices (tablets, less/equal than 1024px) */
 
 /***ICI CELA PERMET DE DEFINIR LA TAILLE MAXIMALE DU FORMAT TABLETTE AVANT DE PASSER AU FORMAT DESKTOP***/
-@media (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .nav {
+        width: 13rem;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
+    }
+
+    .hebergements-cards {
+        justify-content: space-between;
     }
 
     .hebergements {
@@ -397,17 +417,31 @@ li {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
+    .alignimgactivite {
+        justify-content: space-between;
+    }
+
+    .alignimgactivite img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .borderradius {
+        width: 180px;
+    }
+
     .populaires-cards .card {
-        width: 30%;
+        width: 15rem;
     }
 
     .populaires-cards .card-title {
@@ -419,9 +453,10 @@ li {
     }
 }
 
+
 /* Small devices (phones, less than 768px) FORMAT MOBILE */
 /***ICI CELA PERMET DE DEFINIR LA TAILLE MAXIMALE DU FORMAT MOBILE AVANT DE PASSER AU FORMAT TABLETTE***/
-@media only screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width:320px) and (max-width:767px) {
 
     /*HEADER*/
     body {
@@ -446,12 +481,12 @@ li {
     .nav div {
         width: 60%;
         text-align: center;
+        padding-bottom: 15px;
     }
 
     .nav div:hover {
         border-bottom: solid var(--main-color);
         border-top: none;
-        padding-bottom: 15px;
     }
 
     .hebergements-cards .card,
@@ -461,20 +496,16 @@ li {
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
-        margin-bottom: 30px;
     }
 
     .hebergements-and-populaires section {
         border-radius: 0%;
         background-color: white;
+        width: 100%;
     }
 
     .populaires-cards {
         flex-direction: column;
-    }
-
-    .populaires-cards .card {
-        width: 100%;
     }
 
     #populaires {
@@ -482,28 +513,34 @@ li {
     }
 
     .filter {
-        JUSTIFY-CONTENT: center;
         flex-direction: row;
-        align-items: stretch;
         flex-wrap: wrap;
-        GAP: 10px;
+        gap: 10px;
     }
 
     .filter div {
         width: 35%;
+        font-size: 13px;
+        justify-content: flex-start;
     }
 
-    h2,
-    p,
-    .filter-title {
-        margin-left: 30px;
+    .filter_padding {
+        padding: 0 30px;
+        box-sizing: border-box;
     }
 
     .search-bar {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin: 30px;
+    }
+
+    .search-bar-width {
+        width: 100%;
+    }
+
+    .search-bar-width input {
+        width: 100%;
     }
 
     /***ICI C'EST LE BOUTON QUE JAI MASQUER QUI APPARAIT EN MOBILE SOUS LA FORME DUNE LOUPE***/
@@ -527,13 +564,19 @@ li {
         display: none;
     }
 
+    .alignimgactivite {
+        flex-direction: column;
+    }
+
     .alignimgactivite img {
         height: 124px;
         object-fit: cover;
+        width: 100%;
     }
 
     .centeractivite {
-        padding: 0%;
+        padding: 30px;
+        box-sizing: border-box;
     }
 
     footer {
