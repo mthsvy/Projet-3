@@ -1,4 +1,5 @@
 # booki-starter-pack
+
 Booki - Trouvez votre hébergement et vos activités
 
 Le site Web de l'agence de voyage permet aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. Les utilisateurs peuvent parcourir les hébergements disponibles, afficher les détails de chaque hébergement, et réserver leur séjour. De même, ils peuvent explorer les activités proposées et en savoir plus sur chacune d'entre elles.
